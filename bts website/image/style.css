@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "open Sans",sans-serif;
+    box-sizing: border-box;
+}
+/* ======================================INTRO============================================ */
+.intro{
+    background: #191919;
+    color: rgb(202, 199, 199);
+}
+.container{
+    position: relative;
+    width: 1100PX;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+.container .card{
+    position: relative;
+    max-width: 300px;
+    height: 215px;
+    background: rgb(51, 49, 49);
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 202px rgba(0,0,0,0.5);
+    transition: 0.3s ease-in-out ;
+}
+.container .card:hover{
+    height: 420px;
+}
+.container .card .imgBx{
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top: -60px;
+    left: 20px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+.container .card .imgBx img{
+    max-width: 100%;
+    border-radius: 4px ;
+}
+.container .card .content{
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: rgb(202, 199, 199);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+.container .card:hover .content
+{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3s;
+}
+
+
+/* ==========================================about us============================================== */
+.about-section{
+    background: url(./army\ 2.jpg);
+    background-size: 55%;
+    background-color: black;
+    overflow: hidden;
+    padding: 30px 0;
+    background-repeat: no-repeat;
+}
+.inner-container{
+    width: 55%;
+    float: right;
+    background-color:rgb(41, 40, 40);
+    padding: 120px;
+}
+.inner-container h1{
+    margin-bottom: 30px;
+    font-size: 30px;
+    color: rgb(202, 199, 199);
+    font-weight: 900;
+}
+.text{
+    font-size: 13px;
+    color: rgb(202, 199, 199);
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+.skills{
+    display: flex;
+    justify-content: space-between;
+    color: rgb(202, 199, 199);
+    font-weight: 700;
+    font-size: 13px;
+}
+@media screen and (max-widht:1200px){
+    .inner-container{
+        padding: 80px;
+    }
+}
+
+@media screen and (max-widht:1000px){
+    .about-section{
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+    .inner-container{
+        width: 100%;
+    }
+}
+.contact-me{
+    width: 100%;
+    height: 290px;
+    background: #191919;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.contact-me p{
+    color: rgb(202, 199, 199);
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+.contact-me .botton-two{
+    background-color:darkgreen;
+    color: rgb(202, 199, 199);
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 6px 22px;
+    border-radius: 30px;
+    transition: .4s;
+}
+.contact-me .botton-two:hover{
+    background-color: transparent;
+    border: 2px solid darkgreen;
+    cursor: pointer;
+}
